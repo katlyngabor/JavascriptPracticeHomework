@@ -2,14 +2,14 @@
 /* I am creating and defining 5 variables, which are all strings.*/
 
 var week2="Do I know what I'm doing?";
-var truthbomb="Not really";
-var nbd= "I will learn, though"
-var time= "In three months I'll basically be a genius"
-var haters= "Haters can suck it."
+var kinda="Kinda.";
+var nbd= "I will learn, though."
+var hope= "hopefully."
+var bye= "Okay, bye."
 
 /* I am logging the above variables onto the console.*/
 
-console.log(week2, " ", truthbomb, " ", nbd, " ", time, " ", haters);
+console.log(week2, " ", kinda, " ", nbd, " ", hope, " ", bye);
 
 /*I am using the .split method to split the string where there are spaces and doing that 2 times.*/
 
@@ -19,8 +19,8 @@ console.log (me);
 
 /* I am using the .length method to count how many letters are in the following string*/
 
-var random = "What's up chicken butt?";
-console.log (random.length);
+var noob = "I'm a noob.";
+console.log (noob.length);
 
 /* I am splitting the string into each word and then demonstrating how the join method brings them back together.*/
 
@@ -32,7 +32,21 @@ console.log (lifenuggets.join());
 /* I created an array of 10 string items. */
 var snacks = ["chips", "fruit", "cheese", "popcorn", "cereal", "crackers", "peanut butter", "veggies", "cereal bars", "trail mix"];
 
-console.log (snacks.push("almonds"));
-console.log (snacks.pop())
-console.log (snacks.reverse())
-console.log (snacks.splice(2,3,"fruit snacks"))
+/*finds length of the array after adding on the items listed after .push*/
+var snackspush= snacks.push("almonds", "graham crackers");
+
+/*removes the last item of the array*/
+var snackspop= snacks.pop();
+
+/*lists items of the array in reverse*/
+var snacksreverse= snacks.reverse();
+
+/*this starts at position 2 and removes three elements, forming a new array with those elements*/
+var snackssplice= snacks.splice(2,3);
+
+function crazysnacks () {
+     console.log(snacks.pop);
+}
+/*need help*/
+
+crazysnacks ();
