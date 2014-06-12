@@ -36,11 +36,13 @@ var brain= {
 }
 console.log("My brain is " + brain.currentStatus + " and I need " + brain.needs[1] + ".");
 
-function brain2 (status,need) {
+function brain2 (status,want) {
 	if (status.length >4) {
-		console.log ("Girl! You need some " + need + "!")
+		console.log ("Girl! You need some " + want + "!")
 	}else{
 		console.log ("Girl. You're fine.");
 	}
 }
 brain2("tired","hugs");
+
+
