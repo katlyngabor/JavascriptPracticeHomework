@@ -3,7 +3,7 @@
 
 var week2="Do I know what I'm doing?";
 var kinda="Kinda.";
-var nbd= "I will learn, though."
+var nbd= "I will learn more, though."
 var hope= "hopefully."
 var bye= "Okay, bye."
 
@@ -44,9 +44,10 @@ var snacksreverse= snacks.reverse();
 /*this starts at position 2 and removes three elements, forming a new array with those elements*/
 var snackssplice= snacks.splice(2,3);
 
-function crazysnacks () {
-     console.log(snacks.pop);
-}
-/*need help*/
+var myfunction= function(a) {
+		
 
-crazysnacks ();
+}
+     /*need help*/
+
+myfunction();
