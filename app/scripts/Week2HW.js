@@ -1025,6 +1025,7 @@ var items = [{
   "used_manufacturer": false
 }]
 
+/*Problem 1*/
 var priceFind= items.map(function(a){
  return a.price;
 });
@@ -1035,12 +1036,15 @@ var avgFind= priceFind.reduce(function(a,b) {
 
 var answer= avgFind/priceFind.length;
 console.log('The average price is ' + answer +'.');
-   
 
 
 
+/*Problem 2*/
 
-  /*trial.reduce(function(a,b,c) 	{
+var codeFind= items.map(function(a){
+  return a.currency_code;
+});
+
+console.log(codeFind);
 
 
-}*/
