@@ -1027,10 +1027,12 @@ var items = [{
 
 items.map(function(a){
  var trial=(a.price);
+ return trial;
 })
-	for (var i in trial) {
-  console.log(trial[i]);
-}
+	
+trial.reduce(function(a, b) {
+    return (a + b)/trial.length;
+});
 
 
 

@@ -1026,15 +1026,15 @@ var items = [{
 }]
 
 items.map(function(a){
- var trial=(a.price);
-})
-	for (var i in trial) {
-  console.log(trial[i]);
-}
+ var trial=(a.price);});
+
+trial.reduce(function(a, b) {
+    console.log((a + b)/trial.length);
+});
 
 
 
   /*trial.reduce(function(a,b,c) 	{
 
 
-}
+}*/
