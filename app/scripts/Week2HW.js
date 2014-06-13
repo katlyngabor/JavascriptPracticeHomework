@@ -1025,11 +1025,12 @@ var items = [{
   "used_manufacturer": false
 }]
 
-items.map(function(a){
- var trial=(a.price);});
+var priceFind= items.map(function(a){
+ return a.price;
+});
 
-trial.reduce(function(a, b) {
-    console.log((a + b)/trial.length);
+priceFind.reduce(function(a, b) {
+    console.log((a + b)/priceFind.length);
 });
 
 
