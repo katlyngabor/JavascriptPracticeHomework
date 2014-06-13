@@ -1029,9 +1029,14 @@ var priceFind= items.map(function(a){
  return a.price;
 });
 
-priceFind.reduce(function(a, b) {
-    console.log((a + b)/priceFind.length);
+var avgFind= priceFind.reduce(function(a,b) {
+    return (a+b); 
 });
+
+var answer= avgFind/priceFind.length;
+console.log('The average price is ' + answer +'.');
+   
+
 
 
 
