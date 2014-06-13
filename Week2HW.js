@@ -1026,5 +1026,15 @@ var items = [{
 }]
 
 items.map(function(a){
-  console.log(a.price);
+ var trial=(a.price);
 })
+	for (var i in trial) {
+  console.log(trial[i]);
+}
+
+
+
+  /*trial.reduce(function(a,b,c) 	{
+
+
+}
