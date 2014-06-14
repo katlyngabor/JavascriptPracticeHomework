@@ -1041,10 +1041,13 @@ console.log('The average price is ' + answer +'.');
 
 /*Problem 2*/
 
-var codeFind= items.map(function(a){
-  return a.currency_code;
-});
+function correctCode (a){
+  console.log (a ===["GBP"]);
+}
+var codeFind= items.some(correctCode);
 
 console.log(codeFind);
+  
+
 
 

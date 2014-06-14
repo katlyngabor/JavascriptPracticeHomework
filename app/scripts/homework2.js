@@ -1,4 +1,4 @@
-/*This takes the two numbers and lists them and then adds them together*/
+ /*This takes the two numbers and lists them and then adds them together*/
 
 function heyArray(a,b){  
     console.log([a, b, a+b]);
