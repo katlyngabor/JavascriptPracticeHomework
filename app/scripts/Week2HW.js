@@ -1025,7 +1025,9 @@ var items = [{
   "used_manufacturer": false
 }]
 
-/*Problem 1*/
+/*Problem 1: I mapped so that I could isolate all the prices. Then I used reduce to get the sum 
+of those prices. Finally, I divided this sum by the length of the lists of the prices to get 
+the average.*/
 var priceFind= items.map(function(a){
  return a.price;
 });
@@ -1039,16 +1041,24 @@ console.log('The average price is ' + answer +'.');
 
 
 
-/*Problem 2*/
+/*Problem 2 I isolated the correct object and then logged the specific properties*/
 
-var heyThere= items.map(function(a){
- if (a == "GBP") {
-    console.log("hi");
-  }
-  else {
-    console.log ("nothing here!");
+var trial1=items.forEach(function(a){
+  if(a.currency_code==="GBP") {
+    console.log(a.title + " costs " + a.price +  ".");
   }
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
