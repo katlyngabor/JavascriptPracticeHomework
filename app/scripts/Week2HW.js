@@ -1049,9 +1049,14 @@ var trial1=items.forEach(function(a){
   }
 });
 
+≈
 
-
-
+/*Problem 3*/
+var findMaterials=items.forEach(function(a){
+  if (a.materials=="wood"){
+    console.log(a);
+  }
+});
 
 
 
