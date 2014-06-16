@@ -1045,18 +1045,20 @@ console.log('The average price is ' + answer +'.');
 
 var trial1=items.forEach(function(a){
   if(a.currency_code==="GBP") {
-    console.log(a.title + " costs " + a.price +  ".");
+    console.log(a.title + " costs \u00A3" + a.price +  ".");
   }
 });
 
-≈
+
 
 /*Problem 3*/
-var findMaterials=items.forEach(function(a){
-  if (a.materials=="wood"){
-    console.log(a);
-  }
-});
+items.forEach(function (a){
+  a.materials.forEach(function (b) {
+      if (b == 'wood') {
+        console.log (a.title + ' is made of wood.') }
+      });
+  });
+  
 
 
 
